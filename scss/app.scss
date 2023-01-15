@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$font-family-sans-serif : 'Roboto', sans-serif;
+$font-family-base : 'Noto Serif', serif;
+
+
+$navbar-nav-link-padding-x:         1.5rem;
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//CUSTOMIZE CSS
+
+.logo{
+    height: 2.5rem;
+}
+
+.user-img{
+    height: 1.5rem;
+    margin: 0;
+}

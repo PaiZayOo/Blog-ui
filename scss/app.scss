@@ -1,10 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 $font-family-sans-serif : 'Roboto', sans-serif;
-$font-family-base : 'Noto Serif', serif;
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
 
 $navbar-nav-link-padding-x:         1.5rem;
+$secondary : rgba(237, 237, 237, 1);
+$input-border-color: #ffffff;
+$input-btn-focus-color: #ffffff;
 
 
 
@@ -13,12 +37,15 @@ $navbar-nav-link-padding-x:         1.5rem;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 //CUSTOMIZE CSS
-
+.font-serif{
+    font-family: 'Noto Serif', serif;
+}
 .logo{
     height: 2.5rem;
 }
 
 .user-img{
-    height: 1.5rem;
+    height: 2rem;
     margin: 0;
+    padding: 0;
 }

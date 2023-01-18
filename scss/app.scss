@@ -6,7 +6,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-//   xl: 1140px,
+  xl: 1040px,
 //   xxl: 1320px
 );
 
@@ -30,6 +30,10 @@ $secondary : rgba(237, 237, 237, 1);
 $input-border-color: #ffffff;
 $input-btn-focus-color: #ffffff;
 
+$btn-border-radius: 2rem;
+$btn-padding-x: 1.2rem;
+$btn-font-size: 13px;
+
 
 
 
@@ -48,4 +52,16 @@ $input-btn-focus-color: #ffffff;
     height: 2rem;
     margin: 0;
     padding: 0;
+}
+
+.users img:first-child{
+   margin-left: 20px;
+}
+.users img{
+  border-radius: 50%;
+  margin-right: -19px;
+}
+
+.buttons button{
+  margin: 2.3px;
 }

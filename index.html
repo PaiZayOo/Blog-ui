@@ -1,120 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <!-- NAVBAR START  -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div><img src="./img/5968885.png" class=" logo" alt=""></div>
-          </a>
-          <div class="input-group w-25 border-start-0">
-            <span class="input-group-text bg-transparent" id="basic-addon1"><i class=" bi bi-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search Medium" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">
-                  <i class="bi bi-pencil-square me-1"></i>Write 
-                </a>
+  <!-- NAVBAR START  -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div><img src="./img/5968885.png" class=" logo" alt=""></div>
+      </a>
+      <div class="input-group w-25 border-start-0">
+        <span class="input-group-text bg-transparent" id="basic-addon1"><i class=" bi bi-search"></i></span>
+        <input type="text" class="form-control" placeholder="Search Medium" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">
+              <i class="bi bi-pencil-square me-1"></i>Write
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-success text-white rounded-pill" href="#">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./img/user.jpeg" class=" user-img" alt="">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link bg-success text-white rounded-pill" href="#">Sign up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign In</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./img/user.jpeg" class=" user-img" alt="">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR END  -->
+
+  <!-- BLOG START -->
+  <section id="blog">
+    <div class=" container">
+      <div class="row mt-5">
+        <div class="col-md-6 col-xl-7 ">
+          <div class="banner">
+            <div class=" d-flex align-items-center mb-3">
+              <button class=" btn btn-secondary btn-sm me-2 rounded-5"><i class="bi bi-tag-fill"></i></button>
+              <h1 class=" fw-bold m-0 p-0">Programming</h1>
+            </div>
+            <div class=" d-flex align-items-center ms-4">
+              <button class=" btn btn-success me-3  rounded-pill">Follow</button>
+              <button class=" btn btn-outline-success rounded-pill">Start Writing</button>
+            </div>
           </div>
-        </div>
-      </nav>
 
-    <!-- NAVBAR END  -->
+          <article class=" mt-6">
+            <div>
+              <div class=" d-flex align-items-center">
+                <img src="./img/user.jpeg" alt="" class=" user-img me-2">
+                <a href="" class=" text-decoration-none text-black me-2">Pai Zay in Web Developement.</a>
+                <a href="" class=" text-decoration-none text-black-50 me-2">3 days ago</a>
+                <a href="" class=" text-decoration-none text-black-50"><i class=" bi bi-star me-1"></i>Members only</a>
+              </div>
+              <hr>
+              <div class="row my-4">
 
-    <!-- BLOG START -->
-      <section id="blog">
-        <div class=" container">
-          <div class="row mt-5">
-            <div class="col-md-8 col-xl-9 ">
-              <div class="banner">
-                <div class=" d-flex align-items-center mb-3">
-                  <button class=" btn btn-secondary btn-sm me-2 rounded-5"><i class="bi bi-tag-fill"></i></button>
-                  <h1 class=" fw-bold m-0 p-0">Programming</h1>
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Optio eveniet harum fugit quas nobis fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
                 </div>
-                <div class=" d-flex align-items-center ms-4">
-                  <button class=" btn btn-success me-3  rounded-pill">Follow</button>
-                  <button class=" btn btn-outline-success rounded-pill">Start Writing</button>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
                 </div>
               </div>
-        
-              <article class=" mt-6">
-                 <div>
-                  <div class=" d-flex align-items-center">
-                    <img src="./img/user.jpeg" alt="" class=" user-img me-2">
-                    <a href="" class=" text-decoration-none text-black me-2">Pai Zay in Web Developement.</a>
-                    <a href="" class=" text-decoration-none text-black-50 me-2">3 days ago</a>
-                    <a href="" class=" text-decoration-none text-black-50"><i class=" bi bi-star me-1"></i>Members only</a>
-                  </div>
-                  <hr>
-                  <div class="row mt-4">
-                    <div class="col-md-9">
-                      <div class=" mb-3">
-                        <a href="" class=" text-decoration-none text-black fw-bold">
-                          <h4>4 Common Python Mistakes You Should Avoid</h4>
-                        </a>
-                      </div>
-                      <a href="" class=" text-decoration-none text-black ">
-                        <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam eaque quibusdam atque. Cum atque ipsa repellat neque.</p>
-                      </a>
-                      <div class=" my-5 d-flex align-items-center">
-                        <a href="" class=" text-decoration-none">
-                          <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
-                        </a>
-                        <a href="" class=" text-decoration-none">
-                          <p class=" text-black-50 m-0 p-0">10 min read</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
-                    </div>
-                  </div>
+              <hr>
+              <div class="row my-4">
 
-                 </div>
-                 <hr>
-              </article>
-            </div>
-            <div class="col-md-4 col-xl-3"></div>
-          </div>
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Optio eveniet harum fugit quas nobis fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
+                </div>
+              </div>
+              <hr>
+              <div class="row my-4">
+
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet quas nobis
+                      fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
+                </div>
+              </div>
+              <hr>
+              <div class="row my-4">
+
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Optio eveniet harum fugit quas nobis fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
+                </div>
+              </div>
+              <hr>
+              <div class="row my-4">
+
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Optio eveniet harum fugit quas nobis fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
+                </div>
+              </div>
+              <hr>
+              <div class="row my-4">
+
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Optio eveniet harum fugit quas nobis fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
+                </div>
+              </div>
+              <hr>
+              <div class="row my-4">
+
+                <div class="col-md-9 d-flex flex-column h-100 mb-4">
+                  <div class=" mb-3">
+                    <a href="" class=" text-decoration-none text-black fw-bold">
+                      <h4>4 Common Python Mistakes You Should Avoid</h4>
+                    </a>
+                  </div>
+                  <a href="" class=" text-decoration-none text-black ">
+                    <p class=" font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt cum, ullam
+                      eaque quibusdam atque. Cum atque ipsa repellat neque. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Optio eveniet harum fugit quas nobis fugiat. Neque, dolores. Iusto expedita
+                      excepturi velit exercitationem maiores perspiciatis dolorem optio! Dolor obcaecati tempore
+                      officia!</p>
+                  </a>
+                  <div class=" d-flex align-items-center mt-auto">
+                    <a href="" class=" text-decoration-none">
+                      <button class=" btn btn-secondary btn-sm text-black rounded-pill me-2">Programming</button>
+                    </a>
+                    <a href="" class=" text-decoration-none">
+                      <p class=" text-black-50 m-0 p-0">10 min read</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href=""><img src="./img/blog.jpeg" class=" float-end" alt=""></a>
+                </div>
+              </div>
+              <hr>
+          </article>
         </div>
-      
-      </section>
-    <!-- BLOG END  -->
+        <div class="vl col-md-1 col-xl-1"></div>
+        <div class="col-md-5  col-xl-4 ">
+          <div class="row ms-3">
+            <div class="col-md-6 ">
+              <div>
+                <h4 class=" fw-bold">251K</h4>
+                <p class=" text-black-50">Stories</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class=" fw-bold">251K</h4>
+              <p class=" text-black-50">Writers</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" users">
+              <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36">
+              <img src="https://miro.medium.com/fit/c/36/36/1*B2XiyNu3c1NksoV7anUolg.jpeg" width="36" height="36">
+
+
+
+              <img src="https://miro.medium.com/fit/c/36/36/1*h1qqrInVQ1hJScSBi_u_pQ.jpeg" width="36" height="36">
+
+              <img src="https://miro.medium.com/fit/c/36/36/1*dmbNkD5D-u45r44go_cf0g.png" width="36" height="36">
+
+              <img src="https://miro.medium.com/fit/c/36/36/0*XnjnrImmVq5qBIY4" width="36" height="36">
+
+              <img src="https://miro.medium.com/fit/c/36/36/1*__7fjnm37F0cDDOiwLwpOg.png" width="36" height="36">
+
+              <img src="https://miro.medium.com/fit/c/36/36/1*Z_QLgi3M4t8oJSgEzinNzw.jpeg" width="36" height="36">
+              <img src="https://miro.medium.com/fit/c/36/36/1*3IOUuPeTXzgVlaQ63rg0dw.jpeg" width="36" height="36">
+              <img src="https://miro.medium.com/fit/c/36/36/1*2GO0-Jr_8ihweSeEjRTNuQ.jpeg" width="36" height="36">
+            </div>
+          </div>
+          <hr class=" my-4 ms-3">
+          <div class=" position-sticky" style=" top:10px;">
+            <div class=" row ms-3" >
+              <p class=" fw-bold ">Related Topics</p>
+              <div class="buttons">
+                <button class=" btn btn-secondary">SoftWare Developement</button>
+                <button class=" btn btn-secondary">JavaScript</button>
+                <button class=" btn btn-secondary">PHP</button>
+                <button class=" btn btn-secondary">Coding</button>
+                <button class=" btn btn-secondary">Python</button>
+                <button class=" btn btn-secondary">Data Science</button>
+                <button class=" btn btn-secondary">Machin Learning</button>
+              </div>
+            </div>
+            <hr class=" my-4 ms-3">
+            <div class=" row ms-3">
+              <p class=" fw-bold ">Top Writers</p>
+            </div>
+            <div class="row writers ms-3 ">
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              <div class=" d-flex justify-content-between">
+                <div class="d-flex">
+                  <div>
+                    <img src="https://miro.medium.com/fit/c/36/36/1*PGoPhGBhE5X4UbgZv-_G9A.jpeg" width="36" height="36"
+                    class=" rounded-5">
+                  </div>
+                  <div class=" ms-3 ">
+                    <p class=" m-0 p-0 fw-bold">Pai Zay</p>
+                    <p class="text-black-50 d-inline-block text-truncate" style="max-width: 150px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae!</p>
+                  </div>
+                </div>
+                <div>
+                  <button class=" btn btn-success">Follow</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- BLOG END  -->
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
